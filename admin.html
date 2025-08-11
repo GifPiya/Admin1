@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Admin - เปลี่ยนปลายทาง</title>
+</head>
+<body>
+<h2>วิธีเปลี่ยนลิงก์ปลายทาง</h2>
+<ol>
+  <li>ไปที่ <a id="repoLink" href="#">GitHub Repository ของคุณ</a></li>
+  <li>เปิดไฟล์ <b>link.json</b></li>
+  <li>กดปุ่ม <b>Edit</b> (ไอคอนดินสอ)</li>
+  <li>เปลี่ยนค่าใน <code>"destination"</code> เป็นลิงก์ใหม่</li>
+  <li>กด Commit changes</li>
+</ol>
+
+<script>
+  const repo = "https://github.com/GifPiya/Admin1.git";
+  document.getElementById("repoLink").href = repo;
+  document.getElementById("repoLink").textContent = repo;
+</script>
+</body>
+</html>
